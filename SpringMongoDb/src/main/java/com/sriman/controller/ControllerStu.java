@@ -61,4 +61,9 @@ public Student getById(@PathVariable Integer id)
 {
 	return repo.findById(id).get();
 }
+	@GetMapping("/test")
+	public String test(){
+		System.out.println("pull Test");
+		return "pull Tested";
+	}
 }
