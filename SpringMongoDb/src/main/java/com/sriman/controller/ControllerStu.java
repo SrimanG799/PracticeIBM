@@ -63,6 +63,7 @@ public Student getById(@PathVariable Integer id)
 }
 	@GetMapping("/test")
 	public String test(){
+		System.out.println("pull Test");
 		return "pull Tested";
 	}
 }
